@@ -9,10 +9,10 @@ def save_uploaded_file_to_temp(upload):
         temp_file.write(upload.read())
         return temp_file.name
 
-st.title("Welcome to :green[CENSE!] :sunglasses:")
-st.subheader("Here you can test out the current model for our project Cense.")
+st.title("Welcome to :green[CENSE.io!] :sparkler:")
+st.subheader("Here you can test out the current model for our thesis project Cense.")
 
-st.text("Cense is an AI-powered algorithm that uses YOLO and ResNet models to provide real-time content moderation by securely detecting and censoring underage children’s faces on live streaming platforms.")
+st.text("Cense is an AI algorithm that uses YOLO and ResNet models to provide real-time content moderation by securely detecting and censoring underage children’s faces on live streaming platforms.")
 
 uploaded_file = st.file_uploader(":green[Choose an image to test.]")
 
