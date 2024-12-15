@@ -29,6 +29,7 @@ if uploaded_file is not None:
     print(f"Extraction Time: {round(tt, 3)} ms")
     st.header("Result Image")
     st.image(IMG, caption='Result    Image')
+    st.write(f"Extraction time: :red[{round(tt, 3)} ms]")
 else:
     st.image("static/placeholder.jpg", caption='No image selected.')
     st.header("Result image")
