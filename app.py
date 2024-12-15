@@ -12,7 +12,7 @@ def save_uploaded_file_to_temp(upload):
 st.title("Welcome to :green[CENSE.io!] :sparkler:")
 st.subheader("Here you can test out the current model for our thesis project Cense.")
 
-st.text("Cense is an AI algorithm that uses YOLO and ResNet models to provide real-time content moderation by securely detecting and censoring underage children’s faces on live streaming platforms.")
+st.text("Cense is an AI powered algorithm that uses YOLO and ResNet models to provide real-time content moderation by securely detecting and censoring underage children’s faces on live streaming platforms.")
 
 uploaded_file = st.file_uploader(":green[Choose an image to test.]")
 
@@ -28,7 +28,7 @@ if uploaded_file is not None:
     IMG, tt = pipeline.returnAnalysis(imagePath)
     print(f"Extraction Time: {round(tt, 3)} ms")
     st.header("Result Image")
-    st.image(IMG, caption='Uploaded Image')
+    st.image(IMG, caption='Result    Image')
 else:
     st.image("static/placeholder.jpg", caption='No image selected.')
     st.header("Result image")
