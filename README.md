@@ -4,7 +4,7 @@ Cense is an AI model fitted to auto censor minor children's faces on livestreami
 
 ## Installation
 
-Install the dependencies and devDependencies and start the server.
+Install the dependencies using pip and start the server.
 
 ```sh
 cd cense
